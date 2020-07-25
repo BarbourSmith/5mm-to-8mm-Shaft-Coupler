@@ -8,6 +8,146 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.09077598828696926,
+            "y": 0.27586206896551724,
+            "uniqueID": 532614,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 18.87
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.24084919472913618,
+            "y": 0.3218390804597701,
+            "uniqueID": 530558,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 25
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.45900439238652996,
+            "y": 0.3103448275862069,
+            "uniqueID": 341812,
+            "ioValues": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.09224011713030746,
+            "y": 0.5632183908045977,
+            "uniqueID": 897669,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ]
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.34773060029282576,
+            "y": 0.5363984674329502,
+            "uniqueID": 914315,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.191800878477306,
+            "y": 0.6245210727969348,
+            "uniqueID": 103673,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 12.5
+                }
+            ]
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.6442166910688141,
+            "y": 0.5134099616858238,
+            "uniqueID": 523720,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "5mm to 8mm Shaft Coupler",
+                "numberNeeded": 1,
+                "costUSD": 1,
+                "source": "www.example.com",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.20204978038067348,
+            "y": 0.8160919540229885,
+            "uniqueID": 794392,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 12.5
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.09004392386530015,
+            "y": 0.8505747126436781,
+            "uniqueID": 914834,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 8
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.2957540263543192,
+            "y": 0.8045977011494253,
+            "uniqueID": 733300,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 12.5
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +155,78 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 532614,
+            "ap2ID": 530558
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 530558,
+            "ap2ID": 341812
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 341812,
+            "ap2ID": 523720
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 897669,
+            "ap2ID": 103673
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 914315,
+            "ap2ID": 341812
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 103673,
+            "ap2ID": 914315
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 523720
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 794392,
+            "ap2ID": 733300
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 914834,
+            "ap2ID": 794392
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 733300,
+            "ap2ID": 914315
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 2
 }

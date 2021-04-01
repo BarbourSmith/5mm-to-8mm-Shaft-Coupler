@@ -28,6 +28,10 @@
             "uniqueID": 530558,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/547838/532614Circle"
+                },
+                {
                     "name": "height",
                     "ioValue": 25
                 }
@@ -39,7 +43,16 @@
             "x": 0.45900439238652996,
             "y": 0.3103448275862069,
             "uniqueID": 341812,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/547838/914315Assembly"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/547838/530558Extrude"
+                }
+            ]
         },
         {
             "atomType": "Circle",
@@ -79,26 +92,14 @@
             "uniqueID": 103673,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/547838/897669Circle"
+                },
+                {
                     "name": "height",
                     "ioValue": 12.5
                 }
             ]
-        },
-        {
-            "atomType": "Add BOM Tag",
-            "name": "Add BOM Tag",
-            "x": 0.6442166910688141,
-            "y": 0.5134099616858238,
-            "uniqueID": 523720,
-            "ioValues": [],
-            "BOMitem": {
-                "BOMitemName": "5mm to 8mm Shaft Coupler",
-                "numberNeeded": 1,
-                "costUSD": 1,
-                "source": "www.example.com",
-                "totalNeeded": 1,
-                "radius": 0.015384615384615385
-            }
         },
         {
             "atomType": "Extrude",
@@ -107,6 +108,10 @@
             "y": 0.8160919540229885,
             "uniqueID": 794392,
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/547838/914834Circle"
+                },
                 {
                     "name": "height",
                     "ioValue": 12.5
@@ -134,6 +139,10 @@
             "uniqueID": 733300,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/547838/794392Extrude"
+                },
+                {
                     "name": "xDist",
                     "ioValue": 0
                 },
@@ -152,7 +161,13 @@
             "name": "Output",
             "x": 0.9853587115666179,
             "y": 0.5,
-            "ioValues": []
+            "uniqueID": 696317,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/547838/341812Difference"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -172,10 +187,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
             "ap1ID": 341812,
-            "ap2ID": 523720
+            "ap2ID": 696317
         },
         {
             "ap1Name": "geometry",
@@ -197,12 +212,6 @@
             "ap2Primary": false,
             "ap1ID": 103673,
             "ap2ID": 914315
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 523720
         },
         {
             "ap1Name": "geometry",

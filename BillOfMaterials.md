@@ -2,7 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|5mm to 8mm Shaft Coupler|1|$1.00|www.example.com|
-|Total: |1|$1.00| |
+|Total: |0|$0.00| |
 
- 3xCOG MSRP: $3.00
+ 3xCOG MSRP: $0.00
